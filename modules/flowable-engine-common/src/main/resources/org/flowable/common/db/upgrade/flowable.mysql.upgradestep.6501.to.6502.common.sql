@@ -13,7 +13,7 @@ create table FLW_RU_BATCH (
     BATCH_DOC_ID_ varchar(64),
     TENANT_ID_ varchar(255) default '',
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 create table FLW_RU_BATCH_PART (
     ID_ varchar(64) not null,
     REV_ integer,
@@ -30,7 +30,7 @@ create table FLW_RU_BATCH_PART (
     RESULT_DOC_ID_ varchar(64),
     TENANT_ID_ varchar(255) default '',
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 create index FLW_IDX_BATCH_PART on FLW_RU_BATCH_PART(BATCH_ID_);
 alter table FLW_RU_BATCH_PART
     add constraint FLW_FK_BATCH_PART_PARENT
