@@ -14,4 +14,4 @@ create table ACT_HI_TSK_LOG (
   SCOPE_TYPE_ varchar(255),
   TENANT_ID_ varchar(255) default '',
   primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;

@@ -22,7 +22,7 @@ create table ACT_HI_PROCINST (
     BUSINESS_STATUS_ varchar(255),
     primary key (ID_),
     unique (PROC_INST_ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 
 create table ACT_HI_ACTINST (
     ID_ varchar(64) not null,
@@ -43,7 +43,7 @@ create table ACT_HI_ACTINST (
     DELETE_REASON_ varchar(4000),
     TENANT_ID_ varchar(255) default '',
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 
 create table ACT_HI_DETAIL (
     ID_ varchar(64) not null,
@@ -62,7 +62,7 @@ create table ACT_HI_DETAIL (
     TEXT_ varchar(4000),
     TEXT2_ varchar(4000),
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 
 create table ACT_HI_COMMENT (
     ID_ varchar(64) not null,
@@ -75,7 +75,7 @@ create table ACT_HI_COMMENT (
     MESSAGE_ varchar(4000),
     FULL_MSG_ LONGBLOB,
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 
 create table ACT_HI_ATTACHMENT (
     ID_ varchar(64) not null,
@@ -90,7 +90,7 @@ create table ACT_HI_ATTACHMENT (
     CONTENT_ID_ varchar(64),
     TIME_ datetime,
     primary key (ID_)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin;
+) ;
 
 create index ACT_IDX_HI_PRO_INST_END on ACT_HI_PROCINST(END_TIME_);
 create index ACT_IDX_HI_PRO_I_BUSKEY on ACT_HI_PROCINST(BUSINESS_KEY_);
