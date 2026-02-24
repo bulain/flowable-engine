@@ -8,7 +8,7 @@
 	<artifactId>flowable-root</artifactId>
 
 	<packaging>pom</packaging>
-	<version>7.0.1</version>
+	<version>7.0.1.a</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<distributionManagementSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</distributionManagementSnapshotsUrl>
@@ -782,7 +782,7 @@
 				<module>modules/flowable-form-model</module>
 				<module>modules/flowable-common-rest</module>
 				<module>modules/flowable-rest</module>
-				<module>modules/flowable-app-rest</module>
+				<!--<module>modules/flowable-app-rest</module>-->
 				<module>modules/flowable-idm-engine-configurator</module>
 				<module>modules/flowable-idm-spring</module>
 				<module>modules/flowable-idm-spring-configurator</module>
@@ -1011,7 +1011,7 @@
 				<module>modules/flowable-spring-boot</module>
 				<module>modules/flowable-common-rest</module>
 				<module>modules/flowable-rest</module>
-				<module>modules/flowable-app-rest</module>
+				<!--<module>modules/flowable-app-rest</module>-->
 				<module>modules/flowable-cxf</module>
 				<module>modules/flowable-osgi</module>
 				<module>modules/flowable-camel</module>
